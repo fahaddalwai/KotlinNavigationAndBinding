@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.myapplication.FirstFragment"
+        android:label="Home Page"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_firstFragment_to_loserFragment"
+            app:destination="@id/loserFragment"
+            app:popUpTo="@id/firstFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_firstFragment_to_winnerFragment"
+            app:destination="@id/winnerFragment"
+            app:popUpTo="@id/firstFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/winnerFragment"
+        android:name="com.example.myapplication.WinnerFragment"
+        android:label="Winner page"
+        tools:layout="@layout/fragment_winner">
+        <argument
+            android:name="person"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loserFragment"
+        android:name="com.example.myapplication.LoserFragment"
+        android:label="Loser Page"
+        tools:layout="@layout/fragment_loser">
+        <argument
+            android:name="person"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutappFragment"
+        android:name="com.example.myapplication.AboutappFragment"
+        android:label="AboutappFragment"
+        tools:layout="@layout/fragment_aboutapp"/>
+</navigation>

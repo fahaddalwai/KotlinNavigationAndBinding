@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_lost_buddy">You lost buddy</string>
+    <string name="enter">enter</string>
+    <string name="press_button_to_see_if_you_re_name_is_short_or_long">press button to see if you re name is short or long</string>
+    <string name="you_won_buddy">you won buddy</string>
+    <string name="this_app_is_made_so_that_i_can_practice_and_test_my_knowledge_on_navigation_as_well_as_data_binding_tecniques">This app is made so that i can practice and test my knowledge on navigation as well as data binding tecniques</string>
+    <string name="about_the_app">about the app</string>
+</resources>
